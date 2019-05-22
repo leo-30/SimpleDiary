@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8703FB2295CAC9009A9331 /* label1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8703FA2295CAC9009A9331 /* label1.png */; };
 		3EB7A5EB229517B200790BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB7A5EA229517B200790BD1 /* AppDelegate.swift */; };
 		3EB7A5ED229517B200790BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB7A5EC229517B200790BD1 /* ViewController.swift */; };
 		3EB7A5F0229517B200790BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A5EE229517B200790BD1 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		1A7B44E9A080489A5276AE1A /* Pods-SimpleDiary_LiT!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDiary_LiT!.release.xcconfig"; path = "Target Support Files/Pods-SimpleDiary_LiT!/Pods-SimpleDiary_LiT!.release.xcconfig"; sourceTree = "<group>"; };
+		3E8703FA2295CAC9009A9331 /* label1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label1.png; sourceTree = "<group>"; };
 		3EB7A5E7229517B200790BD1 /* SimpleDiary_LiT!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleDiary_LiT!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB7A5EA229517B200790BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB7A5EC229517B200790BD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		3EB7A5FC2295353200790BD1 /* SimpleDiary_イラスト */ = {
 			isa = PBXGroup;
 			children = (
+				3E8703FA2295CAC9009A9331 /* label1.png */,
 				3EB7A5FD2295353200790BD1 /* music1.png */,
 				3EB7A5FE2295353200790BD1 /* study2.png */,
 				3EB7A5FF2295353200790BD1 /* icon.png */,
@@ -254,6 +257,7 @@
 				3EB7A6172295353200790BD1 /* flower2.png in Resources */,
 				3EB7A6182295353200790BD1 /* good1.png in Resources */,
 				3EB7A61B2295353200790BD1 /* good2.png in Resources */,
+				3E8703FB2295CAC9009A9331 /* label1.png in Resources */,
 				3EB7A5F0229517B200790BD1 /* Main.storyboard in Resources */,
 				3EB7A61D2295353200790BD1 /* exercise2.png in Resources */,
 				3EB7A6242295353200790BD1 /* back.png in Resources */,

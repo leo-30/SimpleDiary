@@ -14,7 +14,6 @@ import RealmSwift
 class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,FSCalendarDelegateAppearance {
     
     @IBOutlet var labelDate: UILabel!
-    @IBOutlet var labelContext: UILabel!
     @IBOutlet var labelView: UIImageView!
     @IBOutlet var lineView: UIImageView!
     @IBOutlet var writeButton: UIButton!
@@ -69,12 +68,11 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
-                labelContext.text = String("")
             } else {
+                print("なんでラベルでないの？")
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
-                labelContext.text = String("日記あり！")
             }
         }
         else {
@@ -88,7 +86,6 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
-            labelContext.text = String("")
         }
         
         icon1ImageView.image = iconImage1[icon1]
@@ -360,18 +357,15 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
-                labelContext.text = String("")
             } else {
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
-                labelContext.text = String("日記あり！")
             }
         } else {
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
-            labelContext.text = String("")
         }
     }
 }
