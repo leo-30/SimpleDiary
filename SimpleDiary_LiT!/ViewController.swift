@@ -13,7 +13,6 @@ import RealmSwift
 
 class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,FSCalendarDelegateAppearance {
     
-    @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet var labelDate: UILabel!
     @IBOutlet var labelContext: UILabel!
     @IBOutlet var labelView: UIImageView!
@@ -52,6 +51,7 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         let day = tmpDate.component(.day, from: date)
         labelDate.text = "\(year)年\(month)月\(day)日"
         self.date = "\(year)年\(month)月\(day)日"
+        print("日付が変わる")
         
         let realm = try! Realm()
         print(date)
@@ -103,8 +103,14 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toSave") {
-            let saveView = segue.destination as! SaveViewController
+        
+        if segue.identifier == "toSave" {
+            // segueから遷移先のNavigationControllerを取得
+            let nc = segue.destination as! UINavigationController
+            // NavigationControllerの一番目のViewControllerが次の画面
+            let saveView = nc.topViewController as! SaveViewController
+            // 次画面の変数に前の画面での内容を入れる
+            saveView.date = self.date
             saveView.date = self.date
             saveView.icon1 = self.icon1
             saveView.icon2 = self.icon2
@@ -114,15 +120,20 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             saveView.icon6 = self.icon6
         }
         
-        if (segue.identifier == "diaryView") {
-            let diaryView = segue.destination as! DiaryViewController
-            diaryView.date = self.date
-            diaryView.icon1 = self.icon1
-            diaryView.icon2 = self.icon2
-            diaryView.icon3 = self.icon3
-            diaryView.icon4 = self.icon4
-            diaryView.icon5 = self.icon5
-            diaryView.icon6 = self.icon6
+        if segue.identifier == "diaryView" {
+            // segueから遷移先のNavigationControllerを取得
+            let nc = segue.destination as! UINavigationController
+            // NavigationControllerの一番目のViewControllerが次の画面
+            let saveView = nc.topViewController as! DiaryViewController
+            // 次画面の変数に前の画面での内容を入れる
+            saveView.date = self.date
+            saveView.date = self.date
+            saveView.icon1 = self.icon1
+            saveView.icon2 = self.icon2
+            saveView.icon3 = self.icon3
+            saveView.icon4 = self.icon4
+            saveView.icon5 = self.icon5
+            saveView.icon6 = self.icon6
         }
     }
     
@@ -238,9 +249,29 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         icon6ImageView.image = iconImage6[icon6]
     }
     
-//    @IBAction func tapWrite(_ sender: UIButton) {
-//        self.performSegue(withIdentifier: "toSave", sender: nil)
-//    }
+    @IBAction func tapWrite(_ sender: UIButton) {
+        // STEP.1 Realmを初期化
+        let realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        //STEP.2 保存する要素を書く
+        let diary = Diary()
+        diary.date = date
+        //diary.context = context
+        diary.icon1 = icon1
+        diary.icon2 = icon2
+        diary.icon3 = icon3
+        diary.icon4 = icon4
+        diary.icon5 = icon5
+        diary.icon6 = icon6
+        
+        //STEP.3 Realmに書き込み
+        try! realm.write {
+            realm.add(diary)
+        }
+        
+        self.performSegue(withIdentifier: "toSave", sender: nil)
+    }
     
     @IBAction func tapDiaryView() {
         self.performSegue(withIdentifier: "diaryView", sender: nil)
@@ -259,7 +290,7 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
     }
     
     @IBAction func tapSave(_ sender: UIButton) {
-        
+        //日記の記入ボタンを押した時に一旦Realm内に値を保存する
         // STEP.1 Realmを初期化
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
@@ -267,13 +298,15 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         //STEP.2 保存する要素を書く
         let diary = Diary()
         diary.date = date
-        diary.context = context
         diary.icon1 = icon1
         diary.icon2 = icon2
         diary.icon3 = icon3
         diary.icon4 = icon4
         diary.icon5 = icon5
         diary.icon6 = icon6
+        if context != nil {
+            diary.context = context
+        }
         
         //STEP.3 Realmに書き込み
         try! realm.write {

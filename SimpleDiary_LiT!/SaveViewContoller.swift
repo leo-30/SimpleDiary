@@ -15,7 +15,7 @@ class SaveViewController: UIViewController {
     
     @IBOutlet var contextTextView: UITextView!
     
-    var date: String!
+    var date: String! //ここに前の画面からの変数の値が入る
     
     var icon1 = 0
     var icon2 = 0

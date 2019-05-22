@@ -21,6 +21,7 @@ class DiaryViewController: UIViewController {
     @IBOutlet var icon6ImageView: UIImageView!
     
     var date: String!
+    
     var icon1 = 0
     var icon2 = 0
     var icon3 = 0
@@ -53,7 +54,8 @@ class DiaryViewController: UIViewController {
         
     }
     
-    @IBAction func modoru() {
+    @IBAction func tapToCalendar(_ sender: UIButton) {
+        //画面遷移して前の画面に戻る
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -66,30 +68,6 @@ class DiaryViewController: UIViewController {
         iconImage4 = [UIImage(named: "study1.png")!, UIImage(named: "study2.png")!]
         iconImage5 = [UIImage(named: "book1.png")!, UIImage(named: "book2.png")!]
         iconImage6 = [UIImage(named: "exercise1.png")!, UIImage(named: "exercise2.png")!]
-        
-        let realm = try! Realm()
-        //文字列によるクエリ
-        if let savedDiary = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
-            
-            print("Realmの保存内容")
-            print(savedDiary)
-            
-            icon1 = savedDiary.icon1
-            icon2 = savedDiary.icon2
-            icon3 = savedDiary.icon3
-            icon4 = savedDiary.icon4
-            icon5 = savedDiary.icon5
-            icon6 = savedDiary.icon6
-        }
-        else {
-            print("データがありません")
-            icon1 = 0
-            icon2 = 0
-            icon3 = 0
-            icon4 = 0
-            icon5 = 0
-            icon6 = 0
-        }
         
         icon1ImageView.image = iconImage1[icon1]
         icon2ImageView.image = iconImage2[icon2]

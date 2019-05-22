@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleDiary_LiT_" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,6 +22,10 @@
                                 <rect key="frame" x="0.0" y="61" width="320" height="279"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iBP-v7-14h"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9UA-kb-kLp"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFg-R2-L9P">
                                 <rect key="frame" x="16" y="28" width="46" height="30"/>
@@ -162,7 +166,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U2N-qQ-JZV" kind="show" id="P42-hU-ytS"/>
+                                    <segue destination="U2N-qQ-JZV" kind="show" identifier="diaryView" id="P42-hU-ytS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,6 +185,7 @@
                         <outlet property="labelDate" destination="hcH-Px-puL" id="j88-4O-snW"/>
                         <outlet property="labelView" destination="IE6-Kd-D21" id="poM-Ef-AhG"/>
                         <outlet property="lineView" destination="HQA-Vo-bPN" id="e1E-FH-B4g"/>
+                        <outlet property="writeButton" destination="nqG-RI-hhM" id="eIa-cz-hYg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -567,7 +572,11 @@
                         <viewLayoutGuide key="safeArea" id="rAb-4Z-LP9"/>
                     </view>
                     <navigationItem key="navigationItem" title="日記の内容" id="boE-vW-DX1">
-                        <barButtonItem key="leftBarButtonItem" title="戻る" id="Ykk-9p-O3S"/>
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="Ykk-9p-O3S">
+                            <connections>
+                                <action selector="tapToCalendar:" destination="LAH-Ij-FoO" id="pW4-ng-3hw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contextLabel" destination="Yt9-W6-2lG" id="59M-Nb-tcN"/>
@@ -781,7 +790,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Nmb-hc-00n">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ENE-dm-ebP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5U-iR-eAM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pHs-d6-FXX">
@@ -793,6 +801,7 @@
                         <segue destination="V2i-3b-96v" kind="relationship" relationship="rootViewController" id="4hw-OI-Xwb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENE-dm-ebP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="143" y="1013"/>
         </scene>
