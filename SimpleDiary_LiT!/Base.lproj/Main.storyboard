@@ -758,7 +758,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="gEi-Fa-Z6X"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB2-dY-hAg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB2-dY-hAg">
                                 <rect key="frame" x="80" y="104" width="20.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Yvf-1C-N88"/>
@@ -767,8 +767,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="なんかいい日だった！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH8-Pj-hbe">
-                                <rect key="frame" x="100.5" y="104" width="194" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="なんかいい日だった！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH8-Pj-hbe">
+                                <rect key="frame" x="100.5" y="104" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="6Y5-WB-oDa"/>
                                 </constraints>
@@ -793,8 +793,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽しいことがあった♪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-wI-EwP">
-                                <rect key="frame" x="100.5" y="184" width="184" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="楽しいことがあった♪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-wI-EwP">
+                                <rect key="frame" x="100.5" y="184" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Vrc-yI-gpr"/>
                                 </constraints>
@@ -819,8 +819,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいことがあった☀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSi-Gu-rOk">
-                                <rect key="frame" x="100.5" y="264" width="179" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="いいことがあった☀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSi-Gu-rOk">
+                                <rect key="frame" x="100.5" y="264" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="8Uw-vs-seF"/>
                                 </constraints>
@@ -846,8 +846,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="勉強を頑張った！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-In-IJp">
-                                <rect key="frame" x="100.5" y="344" width="155" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="勉強を頑張った！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-In-IJp">
+                                <rect key="frame" x="100.5" y="344" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="AXJ-rk-0Wp"/>
                                 </constraints>
@@ -872,8 +872,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本を読んだ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myT-qh-72v">
-                                <rect key="frame" x="100.5" y="424" width="97" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="本を読んだ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myT-qh-72v">
+                                <rect key="frame" x="100.5" y="424" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="I8C-az-o5F"/>
                                 </constraints>
@@ -890,8 +890,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="運動をした💪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHA-EG-3SG">
-                                <rect key="frame" x="100.5" y="504" width="121" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="運動をした💪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHA-EG-3SG">
+                                <rect key="frame" x="100.5" y="504" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="KXE-S8-CmU"/>
                                 </constraints>
@@ -930,6 +930,7 @@
                             <constraint firstItem="UH8-Pj-hbe" firstAttribute="top" secondItem="uhl-a3-IfD" secondAttribute="top" constant="40" id="aRp-ii-FzC"/>
                             <constraint firstItem="PB2-dY-hAg" firstAttribute="top" secondItem="uhl-a3-IfD" secondAttribute="top" constant="40" id="d8e-Uq-42R"/>
                             <constraint firstItem="KrK-bX-KT2" firstAttribute="leading" secondItem="uhl-a3-IfD" secondAttribute="leading" constant="16" id="dOa-Bw-jRQ"/>
+                            <constraint firstItem="uhl-a3-IfD" firstAttribute="trailing" secondItem="UH8-Pj-hbe" secondAttribute="trailing" constant="8" id="dYG-gF-5vK"/>
                             <constraint firstItem="CPe-wI-EwP" firstAttribute="top" secondItem="UH8-Pj-hbe" secondAttribute="bottom" constant="32" id="eIz-Aq-40v"/>
                             <constraint firstItem="ftm-7j-zbP" firstAttribute="leading" secondItem="uhl-a3-IfD" secondAttribute="leading" constant="16" id="ekf-cV-U25"/>
                             <constraint firstItem="gQx-h5-yL8" firstAttribute="top" secondItem="v0s-5T-bZi" secondAttribute="bottom" constant="32" id="fvL-JB-VnG"/>
