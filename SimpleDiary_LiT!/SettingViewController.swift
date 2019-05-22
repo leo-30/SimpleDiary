@@ -9,6 +9,12 @@
 import UIKit
 
 class SettingViewController: UIViewController {
+    
+    @IBAction func tapToCalendar(_ sender: UIButton) {
+        //画面遷移して前の画面に戻る
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
