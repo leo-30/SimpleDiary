@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E07E4B02296ACFD00BD0430 /* help2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4AD2296ACFD00BD0430 /* help2.png */; };
+		3E07E4B22296ACFD00BD0430 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4AF2296ACFD00BD0430 /* help1.png */; };
+		3E07E4B42296AD4E00BD0430 /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4B32296AD4E00BD0430 /* help3.png */; };
 		3E5A68312295EEC20068BA19 /* 枠.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A68302295EEC20068BA19 /* 枠.png */; };
 		3E8703FB2295CAC9009A9331 /* label1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8703FA2295CAC9009A9331 /* label1.png */; };
 		3EB7A5EB229517B200790BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB7A5EA229517B200790BD1 /* AppDelegate.swift */; };
@@ -27,10 +30,7 @@
 		3EB7A61B2295353200790BD1 /* good2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A6072295353200790BD1 /* good2.png */; };
 		3EB7A61C2295353200790BD1 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A6082295353200790BD1 /* book1.png */; };
 		3EB7A61D2295353200790BD1 /* exercise2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A6092295353200790BD1 /* exercise2.png */; };
-		3EB7A61E2295353200790BD1 /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60A2295353200790BD1 /* help3.png */; };
-		3EB7A61F2295353200790BD1 /* help2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60B2295353200790BD1 /* help2.png */; };
 		3EB7A6202295353200790BD1 /* exercise1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60C2295353200790BD1 /* exercise1.png */; };
-		3EB7A6212295353200790BD1 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60D2295353200790BD1 /* help1.png */; };
 		3EB7A6222295353200790BD1 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60E2295353200790BD1 /* line.png */; };
 		3EB7A6232295353200790BD1 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A60F2295353200790BD1 /* setting.png */; };
 		3EB7A6242295353200790BD1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB7A6102295353200790BD1 /* back.png */; };
@@ -47,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		1A7B44E9A080489A5276AE1A /* Pods-SimpleDiary_LiT!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDiary_LiT!.release.xcconfig"; path = "Target Support Files/Pods-SimpleDiary_LiT!/Pods-SimpleDiary_LiT!.release.xcconfig"; sourceTree = "<group>"; };
+		3E07E4AD2296ACFD00BD0430 /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
+		3E07E4AF2296ACFD00BD0430 /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
+		3E07E4B32296AD4E00BD0430 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
 		3E5A68302295EEC20068BA19 /* 枠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "枠.png"; sourceTree = "<group>"; };
 		3E8703FA2295CAC9009A9331 /* label1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label1.png; sourceTree = "<group>"; };
 		3EB7A5E7229517B200790BD1 /* SimpleDiary_LiT!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleDiary_LiT!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,10 +72,7 @@
 		3EB7A6072295353200790BD1 /* good2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good2.png; sourceTree = "<group>"; };
 		3EB7A6082295353200790BD1 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book1.png; sourceTree = "<group>"; };
 		3EB7A6092295353200790BD1 /* exercise2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exercise2.png; sourceTree = "<group>"; };
-		3EB7A60A2295353200790BD1 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
-		3EB7A60B2295353200790BD1 /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
 		3EB7A60C2295353200790BD1 /* exercise1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exercise1.png; sourceTree = "<group>"; };
-		3EB7A60D2295353200790BD1 /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
 		3EB7A60E2295353200790BD1 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		3EB7A60F2295353200790BD1 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		3EB7A6102295353200790BD1 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -151,6 +151,9 @@
 		3EB7A5FC2295353200790BD1 /* SimpleDiary_イラスト */ = {
 			isa = PBXGroup;
 			children = (
+				3E07E4B32296AD4E00BD0430 /* help3.png */,
+				3E07E4AF2296ACFD00BD0430 /* help1.png */,
+				3E07E4AD2296ACFD00BD0430 /* help2.png */,
 				3E5A68302295EEC20068BA19 /* 枠.png */,
 				3E8703FA2295CAC9009A9331 /* label1.png */,
 				3EB7A5FD2295353200790BD1 /* music1.png */,
@@ -166,10 +169,7 @@
 				3EB7A6072295353200790BD1 /* good2.png */,
 				3EB7A6082295353200790BD1 /* book1.png */,
 				3EB7A6092295353200790BD1 /* exercise2.png */,
-				3EB7A60A2295353200790BD1 /* help3.png */,
-				3EB7A60B2295353200790BD1 /* help2.png */,
 				3EB7A60C2295353200790BD1 /* exercise1.png */,
-				3EB7A60D2295353200790BD1 /* help1.png */,
 				3EB7A60E2295353200790BD1 /* line.png */,
 				3EB7A60F2295353200790BD1 /* setting.png */,
 				3EB7A6102295353200790BD1 /* back.png */,
@@ -247,12 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB7A5F5229517B500790BD1 /* LaunchScreen.storyboard in Resources */,
-				3EB7A61F2295353200790BD1 /* help2.png in Resources */,
 				3EB7A6142295353200790BD1 /* music2.png in Resources */,
 				3EB7A6202295353200790BD1 /* exercise1.png in Resources */,
 				3EB7A5F2229517B500790BD1 /* Assets.xcassets in Resources */,
-				3EB7A61E2295353200790BD1 /* help3.png in Resources */,
-				3EB7A6212295353200790BD1 /* help1.png in Resources */,
 				3E5A68312295EEC20068BA19 /* 枠.png in Resources */,
 				3EB7A6162295353200790BD1 /* flower1.png in Resources */,
 				3EB7A6222295353200790BD1 /* line.png in Resources */,
@@ -263,12 +260,15 @@
 				3EB7A61B2295353200790BD1 /* good2.png in Resources */,
 				3E8703FB2295CAC9009A9331 /* label1.png in Resources */,
 				3EB7A5F0229517B200790BD1 /* Main.storyboard in Resources */,
+				3E07E4B02296ACFD00BD0430 /* help2.png in Resources */,
 				3EB7A61D2295353200790BD1 /* exercise2.png in Resources */,
 				3EB7A6242295353200790BD1 /* back.png in Resources */,
 				3EB7A6232295353200790BD1 /* setting.png in Resources */,
 				3EB7A6192295353200790BD1 /* label.png in Resources */,
 				3EB7A6122295353200790BD1 /* study2.png in Resources */,
+				3E07E4B22296ACFD00BD0430 /* help1.png in Resources */,
 				3EB7A6112295353200790BD1 /* music1.png in Resources */,
+				3E07E4B42296AD4E00BD0430 /* help3.png in Resources */,
 				3EB7A6152295353200790BD1 /* study1.png in Resources */,
 				3EB7A61A2295353200790BD1 /* book2.png in Resources */,
 			);
@@ -491,13 +491,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB3B524475;
+				DEVELOPMENT_TEAM = PQLC54YQKB;
 				INFOPLIST_FILE = "SimpleDiary_LiT!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "rabbit.sample.SimpleDiary-LiT-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.SimpleDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,13 +510,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SB3B524475;
+				DEVELOPMENT_TEAM = PQLC54YQKB;
 				INFOPLIST_FILE = "SimpleDiary_LiT!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "rabbit.sample.SimpleDiary-LiT-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbit.SimpleDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -19,6 +19,13 @@ class IconSettingViewController: UIViewController {
     @IBOutlet var icon5ImageView: UIImageView!
     @IBOutlet var icon6ImageView: UIImageView!
     
+    var iconInfo1: String!
+    var iconInfo2: String!
+    var iconInfo3: String!
+    var iconInfo4: String!
+    var iconInfo5: String!
+    var iconInfo6: String!
+    
     var iconImage1: [UIImage]!
     var iconImage2: [UIImage]!
     var iconImage3: [UIImage]!
@@ -69,21 +76,51 @@ class IconSettingViewController: UIViewController {
         let icon = Icon()
         if iconNumber == 1 {
             icon.iconInfo1 = contextTextView.text
+            icon.iconInfo2 = iconInfo2
+            icon.iconInfo3 = iconInfo3
+            icon.iconInfo4 = iconInfo4
+            icon.iconInfo5 = iconInfo5
+            icon.iconInfo6 = iconInfo6
         }
         if iconNumber == 2 {
             icon.iconInfo2 = contextTextView.text
+            icon.iconInfo1 = iconInfo1
+            icon.iconInfo3 = iconInfo3
+            icon.iconInfo4 = iconInfo4
+            icon.iconInfo5 = iconInfo5
+            icon.iconInfo6 = iconInfo6
         }
         if iconNumber == 3 {
             icon.iconInfo3 = contextTextView.text
+            icon.iconInfo1 = iconInfo1
+            icon.iconInfo2 = iconInfo2
+            icon.iconInfo4 = iconInfo4
+            icon.iconInfo5 = iconInfo5
+            icon.iconInfo6 = iconInfo6
         }
         if iconNumber == 4 {
             icon.iconInfo4 = contextTextView.text
+            icon.iconInfo1 = iconInfo1
+            icon.iconInfo2 = iconInfo2
+            icon.iconInfo3 = iconInfo3
+            icon.iconInfo5 = iconInfo5
+            icon.iconInfo6 = iconInfo6
         }
         if iconNumber == 5 {
             icon.iconInfo5 = contextTextView.text
+            icon.iconInfo1 = iconInfo1
+            icon.iconInfo2 = iconInfo2
+            icon.iconInfo3 = iconInfo3
+            icon.iconInfo4 = iconInfo4
+            icon.iconInfo6 = iconInfo6
         }
         if iconNumber == 6 {
             icon.iconInfo6 = contextTextView.text
+            icon.iconInfo1 = iconInfo1
+            icon.iconInfo2 = iconInfo2
+            icon.iconInfo3 = iconInfo3
+            icon.iconInfo4 = iconInfo4
+            icon.iconInfo5 = iconInfo5
         }
         
         //STEP.3 Realmに書き込み
@@ -107,20 +144,20 @@ class IconSettingViewController: UIViewController {
         iconImage6 = [UIImage(named: "exercise1.png")!, UIImage(named: "exercise2.png")!]
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        DispatchQueue(label: "background").async {
-//            let realm = try! Realm()
-//
-//            if let savedIcon = realm.objects(Icon.self).last {
-//                let iconInfo1 = savedIcon.iconInfo1
-//                let iconInfo2 = savedIcon.iconInfo2
-//                let iconInfo3 = savedIcon.iconInfo3
-//                let iconInfo4 = savedIcon.iconInfo4
-//                let iconInfo5 = savedIcon.iconInfo5
-//                let iconInfo6 = savedIcon.iconInfo6
-//
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue(label: "background").async {
+            let realm = try! Realm()
+            
+            if let savedIcon = realm.objects(Icon.self).last {
+                self.iconInfo1 = savedIcon.iconInfo1
+                self.iconInfo2 = savedIcon.iconInfo2
+                self.iconInfo3 = savedIcon.iconInfo3
+                self.iconInfo4 = savedIcon.iconInfo4
+                self.iconInfo5 = savedIcon.iconInfo5
+                self.iconInfo6 = savedIcon.iconInfo6
+                
 //                DispatchQueue.main.async {
 //                    self.contextTextView1.text = iconInfo1
 //                    self.contextTextView2.text = iconInfo2
@@ -129,7 +166,9 @@ class IconSettingViewController: UIViewController {
 //                    self.contextTextView5.text = iconInfo5
 //                    self.contextTextView6.text = iconInfo6
 //                }
-//            }
-//        }
-//    }
+            } else {
+                
+            }
+        }
+    }
 }
