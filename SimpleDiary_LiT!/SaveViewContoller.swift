@@ -95,4 +95,31 @@ class SaveViewController: UIViewController {
         
     }
     
+    @IBAction func tapDelete(_ sender: UIButton) {
+        
+        // STEP.1 Realmを初期化
+        let realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        //STEP.2 保存する要素を書く
+        let diary = Diary()
+        diary.date = date
+        diary.context = "日記がありません"
+        diary.icon1 = icon1
+        diary.icon2 = icon2
+        diary.icon3 = icon3
+        diary.icon4 = icon4
+        diary.icon5 = icon5
+        diary.icon6 = icon6
+        
+        //STEP.3 Realmに書き込み
+        try! realm.write {
+            realm.add(diary)
+        }
+        
+        //画面遷移して前の画面に戻る
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
