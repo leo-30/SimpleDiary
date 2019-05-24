@@ -328,6 +328,16 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         try! realm.write {
             realm.add(diary)
         }
+        //print("出ない？")
+        let title = "完了"
+        let message = "記録が完了しました"
+        let okText = "OK"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okayButton = UIAlertAction(title: okText, style: UIAlertAction.Style.cancel, handler: nil)
+        alert.addAction(okayButton)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

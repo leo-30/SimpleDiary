@@ -89,7 +89,6 @@ class SaveViewController: UIViewController {
         try! realm.write {
             realm.add(diary)
         }
-        
         //画面遷移して前の画面に戻る
         self.dismiss(animated: true, completion: nil)
         
