@@ -867,56 +867,56 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容１" translatesAutoresizingMaskIntoConstraints="NO" id="yEt-pF-erd">
-                                <rect key="frame" x="52" y="80" width="106" height="36"/>
+                                <rect key="frame" x="52" y="80" width="106" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="rBI-KU-nXa"/>
+                                    <constraint firstAttribute="height" constant="42" id="rBI-KU-nXa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容２" translatesAutoresizingMaskIntoConstraints="NO" id="R4C-Pe-59g">
-                                <rect key="frame" x="52" y="132" width="106" height="36"/>
+                                <rect key="frame" x="52" y="130" width="106" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="iZv-Qc-e29"/>
+                                    <constraint firstAttribute="height" constant="42" id="iZv-Qc-e29"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容４" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-Hs-J7F">
-                                <rect key="frame" x="194" y="80" width="126" height="36"/>
+                                <rect key="frame" x="194" y="80" width="126" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="mCZ-0i-GKQ"/>
-                                    <constraint firstAttribute="height" constant="36" id="ugU-ML-ScA"/>
+                                    <constraint firstAttribute="height" constant="42" id="ugU-ML-ScA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容５" translatesAutoresizingMaskIntoConstraints="NO" id="6UQ-tt-ahw">
-                                <rect key="frame" x="194" y="132" width="126" height="36"/>
+                                <rect key="frame" x="194" y="130" width="126" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="wxm-ja-ZKi"/>
+                                    <constraint firstAttribute="height" constant="42" id="wxm-ja-ZKi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容３" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-Pd-pwu">
-                                <rect key="frame" x="52" y="184" width="106" height="36"/>
+                                <rect key="frame" x="52" y="180" width="106" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="7pZ-KC-rlg"/>
+                                    <constraint firstAttribute="height" constant="42" id="7pZ-KC-rlg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容６" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-Qr-Hsg">
-                                <rect key="frame" x="194" y="184" width="126" height="36"/>
+                                <rect key="frame" x="194" y="180" width="126" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="pqC-15-eSd"/>
+                                    <constraint firstAttribute="height" constant="42" id="pqC-15-eSd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -948,11 +948,11 @@
                             <constraint firstItem="6UQ-tt-ahw" firstAttribute="leading" secondItem="flM-3r-mgx" secondAttribute="trailing" id="Opu-A6-TyY"/>
                             <constraint firstItem="Mlc-eb-Dub" firstAttribute="centerX" secondItem="mLh-Fh-MVq" secondAttribute="centerX" constant="16" id="PVk-Nh-Tgp"/>
                             <constraint firstItem="ldg-Qr-Hsg" firstAttribute="leading" secondItem="Mlc-eb-Dub" secondAttribute="trailing" id="Qry-yB-Nni"/>
-                            <constraint firstItem="mxV-Pd-pwu" firstAttribute="top" secondItem="R4C-Pe-59g" secondAttribute="bottom" constant="16" id="SO8-QJ-6rJ"/>
+                            <constraint firstItem="mxV-Pd-pwu" firstAttribute="top" secondItem="R4C-Pe-59g" secondAttribute="bottom" constant="8" id="SO8-QJ-6rJ"/>
                             <constraint firstItem="29O-OR-FXd" firstAttribute="top" secondItem="DUh-Wc-iao" secondAttribute="bottom" constant="16" id="VKN-Pw-AvR"/>
                             <constraint firstItem="Mlc-eb-Dub" firstAttribute="top" secondItem="flM-3r-mgx" secondAttribute="bottom" constant="16" id="aXX-cY-1Cn"/>
                             <constraint firstItem="Mlc-eb-Dub" firstAttribute="leading" secondItem="mxV-Pd-pwu" secondAttribute="trailing" id="edH-cn-8bL"/>
-                            <constraint firstItem="6UQ-tt-ahw" firstAttribute="top" secondItem="SHK-Hs-J7F" secondAttribute="bottom" constant="16" id="fXz-6m-3aP"/>
+                            <constraint firstItem="6UQ-tt-ahw" firstAttribute="top" secondItem="SHK-Hs-J7F" secondAttribute="bottom" constant="8" id="fXz-6m-3aP"/>
                             <constraint firstItem="29O-OR-FXd" firstAttribute="leading" secondItem="L0c-Mt-K7e" secondAttribute="leading" constant="16" id="fgX-lX-U4j"/>
                             <constraint firstItem="1gh-F0-6gS" firstAttribute="bottom" secondItem="L0c-Mt-K7e" secondAttribute="top" id="iF7-rZ-Lty"/>
                             <constraint firstItem="Y4Q-s1-juj" firstAttribute="centerX" secondItem="mLh-Fh-MVq" secondAttribute="centerX" constant="16" id="jJr-Cg-M9G"/>
@@ -961,10 +961,10 @@
                             <constraint firstItem="DUh-Wc-iao" firstAttribute="top" secondItem="BjJ-oo-AKH" secondAttribute="bottom" constant="16" id="mrm-Ro-bYa"/>
                             <constraint firstItem="SHK-Hs-J7F" firstAttribute="leading" secondItem="Y4Q-s1-juj" secondAttribute="trailing" id="nkI-PU-icU"/>
                             <constraint firstItem="6UQ-tt-ahw" firstAttribute="trailing" secondItem="L0c-Mt-K7e" secondAttribute="trailing" id="q3R-6o-vV7"/>
-                            <constraint firstItem="R4C-Pe-59g" firstAttribute="top" secondItem="yEt-pF-erd" secondAttribute="bottom" constant="16" id="t5u-0z-Uma"/>
+                            <constraint firstItem="R4C-Pe-59g" firstAttribute="top" secondItem="yEt-pF-erd" secondAttribute="bottom" constant="8" id="t5u-0z-Uma"/>
                             <constraint firstItem="DUh-Wc-iao" firstAttribute="leading" secondItem="L0c-Mt-K7e" secondAttribute="leading" constant="16" id="uH9-1q-3SA"/>
                             <constraint firstItem="qJN-c6-ci6" firstAttribute="leading" secondItem="L0c-Mt-K7e" secondAttribute="leading" constant="-36" id="uyQ-i9-zFg"/>
-                            <constraint firstItem="ldg-Qr-Hsg" firstAttribute="top" secondItem="6UQ-tt-ahw" secondAttribute="bottom" constant="16" id="weq-1e-8Nv"/>
+                            <constraint firstItem="ldg-Qr-Hsg" firstAttribute="top" secondItem="6UQ-tt-ahw" secondAttribute="bottom" constant="8" id="weq-1e-8Nv"/>
                             <constraint firstItem="flM-3r-mgx" firstAttribute="top" secondItem="Y4Q-s1-juj" secondAttribute="bottom" constant="16" id="zU9-ho-oSk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L0c-Mt-K7e"/>
@@ -1064,7 +1064,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日記はありません" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt9-W6-2lG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日記がありません" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt9-W6-2lG">
                                 <rect key="frame" x="8" y="128" width="304" height="212"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>

@@ -42,6 +42,8 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
     
     var date: String!
     var context: String!
+    var savedContext: String!
+    
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let tmpDate = Calendar(identifier: .gregorian)
@@ -50,7 +52,6 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         let day = tmpDate.component(.day, from: date)
         labelDate.text = "\(year)年\(month)月\(day)日"
         self.date = "\(year)年\(month)月\(day)日"
-        print("日付が変わる")
         
         let realm = try! Realm()
         print(date)
@@ -63,13 +64,16 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             icon4 = savedDiary.icon4
             icon5 = savedDiary.icon5
             icon6 = savedDiary.icon6
+            context = savedDiary.context
             
-            if context == nil {
+            print(context)
+            if context == "日記がありません" {
+                print("日付タップでcontextはないから非表示")
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
             } else {
-                print("なんでラベルでないの？")
+                print("日付タップでcontextは空白以外だから表示")
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
@@ -83,6 +87,7 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             icon4 = 0
             icon5 = 0
             icon6 = 0
+            print("日付タップでデータがないから非表示")
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
@@ -251,10 +256,18 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
+        if let savedDiaryWrite = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
+            print("contextに前の内容を記入")
+            savedContext = savedDiaryWrite.context
+        } else {
+            print("contextに日記がありませんと記入")
+            savedContext = "日記がありません"
+        }
+        
         //STEP.2 保存する要素を書く
         let diary = Diary()
         diary.date = date
-        //diary.context = context
+        diary.context = savedContext
         diary.icon1 = icon1
         diary.icon2 = icon2
         diary.icon3 = icon3
@@ -287,10 +300,18 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
     }
     
     @IBAction func tapSave(_ sender: UIButton) {
-        //日記の記入ボタンを押した時に一旦Realm内に値を保存する
+        //保存ボタンを押した時にセーブする
         // STEP.1 Realmを初期化
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        if let savedDiarySave = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
+            print("contextに前の内容を記入")
+            savedContext = savedDiarySave.context
+        } else {
+            print("contextに日記がありませんと記入")
+            savedContext = "日記がありません"
+        }
         
         //STEP.2 保存する要素を書く
         let diary = Diary()
@@ -301,9 +322,7 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         diary.icon4 = icon4
         diary.icon5 = icon5
         diary.icon6 = icon6
-        if context != nil {
-            diary.context = context
-        }
+        diary.context = savedContext
         
         //STEP.3 Realmに書き込み
         try! realm.write {

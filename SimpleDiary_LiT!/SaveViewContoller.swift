@@ -16,13 +16,30 @@ class SaveViewController: UIViewController {
     @IBOutlet var contextTextView: UITextView!
     
     var date: String! //ここに前の画面からの変数の値が入る
-    
+    var context: String!
     var icon1 = 0
     var icon2 = 0
     var icon3 = 0
     var icon4 = 0
     var icon5 = 0
     var icon6 = 0
+    
+    override func viewDidLoad() {
+        let realm = try! Realm()
+        if let savedViewDiary = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
+            icon1 = savedViewDiary.icon1
+            icon2 = savedViewDiary.icon2
+            icon3 = savedViewDiary.icon3
+            icon4 = savedViewDiary.icon4
+            icon5 = savedViewDiary.icon5
+            icon6 = savedViewDiary.icon6
+            context = savedViewDiary.context
+            self.contextTextView.text = context
+        }
+        else {
+            self.contextTextView.text = "日記がありません"
+        }
+    }
     
     //textField以外の部分をタップするとキーボードをしまう
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
