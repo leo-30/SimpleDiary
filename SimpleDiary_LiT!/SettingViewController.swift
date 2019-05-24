@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingViewController: UIViewController {
+    @IBOutlet var alarmButton: UIButton!
     
     @IBAction func tapToCalendar(_ sender: UIButton) {
         //画面遷移して前の画面に戻る
@@ -17,5 +18,6 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        alarmButton.isEnabled = false
     }
 }
