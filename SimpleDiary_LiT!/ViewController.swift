@@ -372,16 +372,20 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             icon5ImageView.image = iconImage5[icon5]
             icon6ImageView.image = iconImage6[icon6]
             
-            if context == nil {
+            
+            if context == "日記がありません" {
+                print("日付タップでcontextはないから非表示")
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
             } else {
+                print("日付タップでcontextは空白以外だから表示")
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
             }
         } else {
+            print("日付タップでデータがないから非表示")
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
