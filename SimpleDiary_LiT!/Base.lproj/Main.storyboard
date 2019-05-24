@@ -10,6 +10,106 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Diary View Controller1-->
+        <scene sceneID="PVw-wq-J3Q">
+            <objects>
+                <viewController id="9bc-cr-6Pc" customClass="DiaryViewController1" customModule="SimpleDiary_LiT_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwe-3U-iPc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="exercise1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-YM-43b">
+                                <rect key="frame" x="230" y="423" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Xjv-Xj-loJ"/>
+                                    <constraint firstAttribute="width" constant="64" id="lI5-mT-uTH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日記はありません" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QST-kh-Kfj">
+                                <rect key="frame" x="8" y="95" width="304" height="212"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower1.png" translatesAutoresizingMaskIntoConstraints="NO" id="E7A-82-cWR">
+                                <rect key="frame" x="26" y="315" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="0Ng-x9-heB"/>
+                                    <constraint firstAttribute="width" constant="64" id="Tzd-Az-AOl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-uu-iYf">
+                                <rect key="frame" x="80" y="39" width="160" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ydA-UU-ce3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="good1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-gb-94j">
+                                <rect key="frame" x="230" y="315" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="IV0-9u-NNd"/>
+                                    <constraint firstAttribute="height" constant="64" id="dbb-2T-gRs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="study1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-IJ-DTx">
+                                <rect key="frame" x="26" y="419" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="C3b-7J-A7i"/>
+                                    <constraint firstAttribute="height" constant="64" id="wEm-TH-UZF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="book1.png" translatesAutoresizingMaskIntoConstraints="NO" id="evr-9W-Mer">
+                                <rect key="frame" x="128" y="423" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="HVN-Cf-fgG"/>
+                                    <constraint firstAttribute="width" constant="64" id="c7u-6G-c6p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="music1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ii6-oY-1ZG">
+                                <rect key="frame" x="128" y="315" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="quf-DW-lRP"/>
+                                    <constraint firstAttribute="width" constant="64" id="sw6-KP-34C"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-nN-M2T">
+                                <rect key="frame" x="34" y="39" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="modoru" destination="9bc-cr-6Pc" eventType="touchUpInside" id="Co7-6r-3Iw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="E7A-82-cWR" secondAttribute="top" id="Duz-F8-fe5"/>
+                            <constraint firstItem="5ju-YM-43b" firstAttribute="top" secondItem="Erf-gb-94j" secondAttribute="bottom" constant="44" id="Mb5-dD-qWv"/>
+                            <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="QST-kh-Kfj" secondAttribute="bottom" constant="8" id="PBe-6U-RgO"/>
+                            <constraint firstItem="hxZ-IJ-DTx" firstAttribute="top" secondItem="E7A-82-cWR" secondAttribute="bottom" constant="40" id="cgT-BU-i1h"/>
+                            <constraint firstItem="QST-kh-Kfj" firstAttribute="top" secondItem="Omr-uu-iYf" secondAttribute="bottom" constant="16" id="eY2-JS-yjf"/>
+                            <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="ii6-oY-1ZG" secondAttribute="top" id="rU8-0k-sZt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vgx-Zg-fxy"/>
+                    </view>
+                    <connections>
+                        <outlet property="contextLabel" destination="QST-kh-Kfj" id="NWE-fm-T6Z"/>
+                        <outlet property="dateLabel" destination="Omr-uu-iYf" id="Wfn-wH-p1F"/>
+                        <outlet property="icon1ImageView" destination="E7A-82-cWR" id="gZ7-X2-DIa"/>
+                        <outlet property="icon2ImageView" destination="ii6-oY-1ZG" id="Kte-FX-Pkj"/>
+                        <outlet property="icon3ImageView" destination="Erf-gb-94j" id="k20-ky-RdH"/>
+                        <outlet property="icon4ImageView" destination="hxZ-IJ-DTx" id="jAE-Bf-5it"/>
+                        <outlet property="icon5ImageView" destination="evr-9W-Mer" id="ERZ-2X-pFb"/>
+                        <outlet property="icon6ImageView" destination="5ju-YM-43b" id="3rH-fW-vLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4L3-Gk-ZSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="130"/>
+        </scene>
         <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -68,7 +168,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tapWrite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7J0-OQ-jC9"/>
-                                    <segue destination="s5U-iR-eAM" kind="presentation" identifier="toSave" id="Wz1-ui-hP8"/>
+                                    <segue destination="s5U-iR-eAM" kind="show" identifier="toSave" id="uPk-5e-G1W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-HV-sfd">
@@ -242,7 +342,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U2N-qQ-JZV" kind="show" identifier="diaryView" id="P42-hU-ytS"/>
+                                    <segue destination="U2N-qQ-JZV" kind="show" identifier="diaryView" id="qBW-sQ-08b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年5月1日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcH-Px-puL">
@@ -1165,6 +1265,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xrp-R8-gwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2259.375" y="1013.0281690140845"/>
+        </scene>
+        <!--Save View Controller1-->
+        <scene sceneID="fay-cl-k1b">
+            <objects>
+                <viewController id="LKP-iS-ohz" customClass="SaveViewController1" customModule="SimpleDiary_LiT_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJ3-NI-kMt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日記の記入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk9-LN-BDh">
+                                <rect key="frame" x="92" y="41" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtW-fp-rY4">
+                                <rect key="frame" x="24" y="41" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="tapToCalendar:" destination="LKP-iS-ohz" eventType="touchUpInside" id="6wi-dx-fnM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv5-bh-e2Y">
+                                <rect key="frame" x="266" y="41" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveButtonPushed:" destination="LKP-iS-ohz" eventType="touchUpInside" id="0C1-ZJ-3ao"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6K-tv-dXY">
+                                <rect key="frame" x="88" y="81" width="144" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="日記を記入しましょう" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5eE-Kj-Pue">
+                                <rect key="frame" x="0.0" y="128" width="320" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zzo-f6-1mE"/>
+                    </view>
+                    <connections>
+                        <outlet property="contextTextView" destination="5eE-Kj-Pue" id="HB1-uY-Som"/>
+                        <outlet property="dateLabel" destination="E6K-tv-dXY" id="2p0-7H-8vV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdm-Ug-UcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643.125" y="1013.0281690140845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nmb-hc-00n">
