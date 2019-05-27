@@ -18,28 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="exercise1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-YM-43b">
-                                <rect key="frame" x="230" y="423" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercise1.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-YM-43b">
+                                <rect key="frame" x="220" y="440" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Xjv-Xj-loJ"/>
                                     <constraint firstAttribute="width" constant="64" id="lI5-mT-uTH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日記はありません" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QST-kh-Kfj">
-                                <rect key="frame" x="8" y="95" width="304" height="212"/>
+                                <rect key="frame" x="8" y="104" width="304" height="220"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower1.png" translatesAutoresizingMaskIntoConstraints="NO" id="E7A-82-cWR">
-                                <rect key="frame" x="26" y="315" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower1.png" translatesAutoresizingMaskIntoConstraints="NO" id="E7A-82-cWR">
+                                <rect key="frame" x="36" y="332" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="0Ng-x9-heB"/>
                                     <constraint firstAttribute="width" constant="64" id="Tzd-Az-AOl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-uu-iYf">
-                                <rect key="frame" x="80" y="39" width="160" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-uu-iYf">
+                                <rect key="frame" x="141.5" y="56" width="37" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ydA-UU-ce3"/>
                                 </constraints>
@@ -47,29 +47,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="good1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-gb-94j">
-                                <rect key="frame" x="230" y="315" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-gb-94j">
+                                <rect key="frame" x="220" y="332" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="IV0-9u-NNd"/>
                                     <constraint firstAttribute="height" constant="64" id="dbb-2T-gRs"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="study1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-IJ-DTx">
-                                <rect key="frame" x="26" y="419" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="study1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hxZ-IJ-DTx">
+                                <rect key="frame" x="36" y="436" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="C3b-7J-A7i"/>
                                     <constraint firstAttribute="height" constant="64" id="wEm-TH-UZF"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="book1.png" translatesAutoresizingMaskIntoConstraints="NO" id="evr-9W-Mer">
-                                <rect key="frame" x="128" y="423" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book1.png" translatesAutoresizingMaskIntoConstraints="NO" id="evr-9W-Mer">
+                                <rect key="frame" x="128" y="440" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="HVN-Cf-fgG"/>
                                     <constraint firstAttribute="width" constant="64" id="c7u-6G-c6p"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="music1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ii6-oY-1ZG">
-                                <rect key="frame" x="128" y="315" width="64" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ii6-oY-1ZG">
+                                <rect key="frame" x="128" y="332" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="quf-DW-lRP"/>
                                     <constraint firstAttribute="width" constant="64" id="sw6-KP-34C"/>
@@ -86,12 +86,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Omr-uu-iYf" firstAttribute="top" secondItem="Vgx-Zg-fxy" secondAttribute="top" constant="36" id="0hl-1S-lxs"/>
+                            <constraint firstItem="QST-kh-Kfj" firstAttribute="top" secondItem="Omr-uu-iYf" secondAttribute="bottom" constant="8" id="2xp-sI-hLq"/>
+                            <constraint firstItem="Vgx-Zg-fxy" firstAttribute="bottom" secondItem="evr-9W-Mer" secondAttribute="bottom" constant="64" id="3Uo-KO-GSW"/>
+                            <constraint firstItem="E7A-82-cWR" firstAttribute="leading" secondItem="Vgx-Zg-fxy" secondAttribute="leading" constant="36" id="4UY-Ja-Pkg"/>
+                            <constraint firstItem="ii6-oY-1ZG" firstAttribute="centerX" secondItem="hwe-3U-iPc" secondAttribute="centerX" id="AR6-ot-bW7"/>
+                            <constraint firstItem="Vgx-Zg-fxy" firstAttribute="bottom" secondItem="5ju-YM-43b" secondAttribute="bottom" constant="64" id="CYL-eA-waw"/>
                             <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="E7A-82-cWR" secondAttribute="top" id="Duz-F8-fe5"/>
+                            <constraint firstItem="Vgx-Zg-fxy" firstAttribute="trailing" secondItem="5ju-YM-43b" secondAttribute="trailing" constant="36" id="H4l-lA-OUM"/>
+                            <constraint firstItem="Omr-uu-iYf" firstAttribute="centerX" secondItem="hwe-3U-iPc" secondAttribute="centerX" id="Jy7-3D-zfs"/>
                             <constraint firstItem="5ju-YM-43b" firstAttribute="top" secondItem="Erf-gb-94j" secondAttribute="bottom" constant="44" id="Mb5-dD-qWv"/>
                             <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="QST-kh-Kfj" secondAttribute="bottom" constant="8" id="PBe-6U-RgO"/>
+                            <constraint firstItem="Vgx-Zg-fxy" firstAttribute="trailing" secondItem="Erf-gb-94j" secondAttribute="trailing" constant="36" id="Qf5-ld-snU"/>
+                            <constraint firstItem="evr-9W-Mer" firstAttribute="centerX" secondItem="hwe-3U-iPc" secondAttribute="centerX" id="Vt6-p1-8lM"/>
                             <constraint firstItem="hxZ-IJ-DTx" firstAttribute="top" secondItem="E7A-82-cWR" secondAttribute="bottom" constant="40" id="cgT-BU-i1h"/>
-                            <constraint firstItem="QST-kh-Kfj" firstAttribute="top" secondItem="Omr-uu-iYf" secondAttribute="bottom" constant="16" id="eY2-JS-yjf"/>
                             <constraint firstItem="Erf-gb-94j" firstAttribute="top" secondItem="ii6-oY-1ZG" secondAttribute="top" id="rU8-0k-sZt"/>
+                            <constraint firstItem="hxZ-IJ-DTx" firstAttribute="leading" secondItem="Vgx-Zg-fxy" secondAttribute="leading" constant="36" id="tir-Lw-UM0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vgx-Zg-fxy"/>
                     </view>
