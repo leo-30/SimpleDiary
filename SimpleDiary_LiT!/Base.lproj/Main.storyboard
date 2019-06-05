@@ -1637,7 +1637,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容１" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-a5-XN6">
-                                                <rect key="frame" x="96" y="16" width="302" height="80"/>
+                                                <rect key="frame" x="112" y="16" width="286" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="zsV-V3-2Nz"/>
@@ -1646,7 +1646,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容２" translatesAutoresizingMaskIntoConstraints="NO" id="i89-Gv-sp0">
-                                                <rect key="frame" x="96" y="128" width="248" height="80"/>
+                                                <rect key="frame" x="112" y="128" width="232" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="chV-8a-sHO"/>
@@ -1655,7 +1655,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容３" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-DK-127">
-                                                <rect key="frame" x="96" y="240" width="248" height="80"/>
+                                                <rect key="frame" x="112" y="240" width="232" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="wI0-zo-XPo"/>
@@ -1664,7 +1664,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容４" translatesAutoresizingMaskIntoConstraints="NO" id="NmE-ya-Sil">
-                                                <rect key="frame" x="96" y="352" width="248" height="80"/>
+                                                <rect key="frame" x="112" y="352" width="232" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="dhx-58-NTu"/>
@@ -1673,7 +1673,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容５" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-TW-Cr8">
-                                                <rect key="frame" x="96" y="464" width="248" height="80"/>
+                                                <rect key="frame" x="112" y="464" width="232" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="sOY-Ky-90A"/>
@@ -1682,7 +1682,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="内容６" translatesAutoresizingMaskIntoConstraints="NO" id="kQi-Mf-fox">
-                                                <rect key="frame" x="96" y="576" width="248" height="80"/>
+                                                <rect key="frame" x="112" y="576" width="232" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="onN-cW-UkD"/>
@@ -1703,17 +1703,17 @@
                                             <constraint firstAttribute="height" constant="1112" id="1vM-3J-H6c"/>
                                             <constraint firstItem="Iih-DK-127" firstAttribute="top" secondItem="i89-Gv-sp0" secondAttribute="bottom" constant="32" id="27O-OO-Uxx"/>
                                             <constraint firstItem="epK-Et-FVX" firstAttribute="leading" secondItem="zUS-ih-AmM" secondAttribute="leading" constant="16" id="3iF-v1-u3Q"/>
-                                            <constraint firstItem="Iih-DK-127" firstAttribute="leading" secondItem="opu-IT-9vf" secondAttribute="trailing" id="5Oa-Eu-GMR"/>
+                                            <constraint firstItem="Iih-DK-127" firstAttribute="leading" secondItem="opu-IT-9vf" secondAttribute="trailing" constant="16" id="5Oa-Eu-GMR"/>
                                             <constraint firstItem="kQi-Mf-fox" firstAttribute="centerY" secondItem="X7I-Ii-V1I" secondAttribute="centerY" id="6Q9-Na-gbN"/>
                                             <constraint firstItem="kQi-Mf-fox" firstAttribute="trailing" secondItem="zhh-TW-Cr8" secondAttribute="trailing" id="A3h-hO-Hib"/>
                                             <constraint firstItem="Jfc-De-tE8" firstAttribute="leading" secondItem="zUS-ih-AmM" secondAttribute="leading" constant="16" id="AfH-ON-r08"/>
                                             <constraint firstItem="OdK-a5-XN6" firstAttribute="top" secondItem="zUS-ih-AmM" secondAttribute="top" constant="16" id="Dd1-Qo-1Bc"/>
-                                            <constraint firstItem="zhh-TW-Cr8" firstAttribute="leading" secondItem="CiZ-a9-4ag" secondAttribute="trailing" id="ErL-cC-XId"/>
+                                            <constraint firstItem="zhh-TW-Cr8" firstAttribute="leading" secondItem="CiZ-a9-4ag" secondAttribute="trailing" constant="16" id="ErL-cC-XId"/>
                                             <constraint firstItem="Iih-DK-127" firstAttribute="centerX" secondItem="i89-Gv-sp0" secondAttribute="centerX" id="IVy-cS-yom"/>
-                                            <constraint firstItem="kQi-Mf-fox" firstAttribute="leading" secondItem="X7I-Ii-V1I" secondAttribute="trailing" id="Ml0-XG-8IB"/>
+                                            <constraint firstItem="kQi-Mf-fox" firstAttribute="leading" secondItem="X7I-Ii-V1I" secondAttribute="trailing" constant="16" id="Ml0-XG-8IB"/>
                                             <constraint firstItem="NmE-ya-Sil" firstAttribute="trailing" secondItem="Iih-DK-127" secondAttribute="trailing" id="NHN-fh-6Bo"/>
                                             <constraint firstItem="zhh-TW-Cr8" firstAttribute="top" secondItem="NmE-ya-Sil" secondAttribute="bottom" constant="32" id="NJJ-CN-fpR"/>
-                                            <constraint firstItem="OdK-a5-XN6" firstAttribute="leading" secondItem="q7X-W0-9Jt" secondAttribute="trailing" id="RGp-lf-yax"/>
+                                            <constraint firstItem="OdK-a5-XN6" firstAttribute="leading" secondItem="q7X-W0-9Jt" secondAttribute="trailing" constant="16" id="RGp-lf-yax"/>
                                             <constraint firstItem="X7I-Ii-V1I" firstAttribute="top" secondItem="CiZ-a9-4ag" secondAttribute="bottom" constant="16" id="TNh-EX-f5e"/>
                                             <constraint firstItem="X7I-Ii-V1I" firstAttribute="leading" secondItem="zUS-ih-AmM" secondAttribute="leading" constant="16" id="VdU-sX-69U"/>
                                             <constraint firstItem="q7X-W0-9Jt" firstAttribute="leading" secondItem="zUS-ih-AmM" secondAttribute="leading" constant="16" id="aAV-ze-nfW"/>
@@ -1721,10 +1721,10 @@
                                             <constraint firstItem="NmE-ya-Sil" firstAttribute="top" secondItem="Iih-DK-127" secondAttribute="bottom" constant="32" id="cGx-3U-M8k"/>
                                             <constraint firstItem="Jfc-De-tE8" firstAttribute="top" secondItem="q7X-W0-9Jt" secondAttribute="bottom" constant="32" id="czq-VB-G30"/>
                                             <constraint firstItem="opu-IT-9vf" firstAttribute="leading" secondItem="zUS-ih-AmM" secondAttribute="leading" constant="16" id="efg-1Q-yk1"/>
-                                            <constraint firstItem="i89-Gv-sp0" firstAttribute="leading" secondItem="epK-Et-FVX" secondAttribute="trailing" id="fSp-Qm-hsS"/>
+                                            <constraint firstItem="i89-Gv-sp0" firstAttribute="leading" secondItem="epK-Et-FVX" secondAttribute="trailing" constant="16" id="fSp-Qm-hsS"/>
                                             <constraint firstItem="q7X-W0-9Jt" firstAttribute="top" secondItem="zUS-ih-AmM" secondAttribute="top" constant="16" id="fng-8O-a6A"/>
                                             <constraint firstItem="9lB-cD-gxV" firstAttribute="centerX" secondItem="zUS-ih-AmM" secondAttribute="centerX" id="gDQ-iR-my7"/>
-                                            <constraint firstItem="NmE-ya-Sil" firstAttribute="leading" secondItem="opu-IT-9vf" secondAttribute="trailing" id="gsD-k7-ywu"/>
+                                            <constraint firstItem="NmE-ya-Sil" firstAttribute="leading" secondItem="opu-IT-9vf" secondAttribute="trailing" constant="16" id="gsD-k7-ywu"/>
                                             <constraint firstItem="kQi-Mf-fox" firstAttribute="top" secondItem="zhh-TW-Cr8" secondAttribute="bottom" constant="32" id="j7T-NM-TL1"/>
                                             <constraint firstItem="i89-Gv-sp0" firstAttribute="top" secondItem="OdK-a5-XN6" secondAttribute="bottom" constant="32" id="mu0-F6-J0m"/>
                                             <constraint firstItem="CiZ-a9-4ag" firstAttribute="top" secondItem="opu-IT-9vf" secondAttribute="bottom" constant="32" id="ne1-xH-hCO"/>
