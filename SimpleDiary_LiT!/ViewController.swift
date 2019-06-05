@@ -66,28 +66,28 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             icon6 = savedDiary.icon6
             context = savedDiary.context
             
-            print(context)
+            //print(context)
             if context == "日記がありません" {
-                print("日付タップでcontextはないから非表示")
+                //print("日付タップでcontextはないから非表示")
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
             } else {
-                print("日付タップでcontextは空白以外だから表示")
+                //print("日付タップでcontextは空白以外だから表示")
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
             }
         }
         else {
-            print("データがありません")
+            //print("データがありません")
             icon1 = 0
             icon2 = 0
             icon3 = 0
             icon4 = 0
             icon5 = 0
             icon6 = 0
-            print("日付タップでデータがないから非表示")
+            //print("日付タップでデータがないから非表示")
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
@@ -257,10 +257,10 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         if let savedDiaryWrite = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
-            print("contextに前の内容を記入")
+            //print("contextに前の内容を記入")
             savedContext = savedDiaryWrite.context
         } else {
-            print("contextに日記がありませんと記入")
+            //print("contextに日記がありませんと記入")
             savedContext = "日記がありません"
         }
         
@@ -306,10 +306,10 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         if let savedDiarySave = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
-            print("contextに前の内容を記入")
+            //print("contextに前の内容を記入")
             savedContext = savedDiarySave.context
         } else {
-            print("contextに日記がありませんと記入")
+            //print("contextに日記がありませんと記入")
             savedContext = "日記がありません"
         }
         
@@ -365,8 +365,8 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
         let realm = try! Realm()
         if let savedDiaryFirst = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
             
-            print("最初の画面での保存データ")
-            print(savedDiaryFirst)
+            //print("最初の画面での保存データ")
+            //print(savedDiaryFirst)
             context = savedDiaryFirst.context
             icon1 = savedDiaryFirst.icon1
             icon2 = savedDiaryFirst.icon2
@@ -384,18 +384,58 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
             
             
             if context == "日記がありません" {
-                print("日付タップでcontextはないから非表示")
+                //print("日付タップでcontextはないから非表示")
                 labelView.isHidden = true
                 lineView.isHidden = true
                 diaryViewButton.isHidden = true
             } else {
-                print("日付タップでcontextは空白以外だから表示")
+                //print("日付タップでcontextは空白以外だから表示")
                 labelView.isHidden = false
                 lineView.isHidden = false
                 diaryViewButton.isHidden = false
             }
         } else {
-            print("日付タップでデータがないから非表示")
+            //print("日付タップでデータがないから非表示")
+            labelView.isHidden = true
+            lineView.isHidden = true
+            diaryViewButton.isHidden = true
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        let realm = try! Realm()
+        if let savedDiaryFirst = realm.objects(Diary.self).filter("date == '\(self.date!)'").last {
+            
+            //print("最初の画面での保存データ")
+            //print(savedDiaryFirst)
+            context = savedDiaryFirst.context
+            icon1 = savedDiaryFirst.icon1
+            icon2 = savedDiaryFirst.icon2
+            icon3 = savedDiaryFirst.icon3
+            icon4 = savedDiaryFirst.icon4
+            icon5 = savedDiaryFirst.icon5
+            icon6 = savedDiaryFirst.icon6
+            
+            icon1ImageView.image = iconImage1[icon1]
+            icon2ImageView.image = iconImage2[icon2]
+            icon3ImageView.image = iconImage3[icon3]
+            icon4ImageView.image = iconImage4[icon4]
+            icon5ImageView.image = iconImage5[icon5]
+            icon6ImageView.image = iconImage6[icon6]
+            
+            
+            if context == "日記がありません" {
+                //print("日付タップでcontextはないから非表示")
+                labelView.isHidden = true
+                lineView.isHidden = true
+                diaryViewButton.isHidden = true
+            } else {
+                //print("日付タップでcontextは空白以外だから表示")
+                labelView.isHidden = false
+                lineView.isHidden = false
+                diaryViewButton.isHidden = false
+            }
+        } else {
+            //print("日付タップでデータがないから非表示")
             labelView.isHidden = true
             lineView.isHidden = true
             diaryViewButton.isHidden = true
@@ -403,8 +443,3 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,F
     }
 }
 
-//extension UIColor {
-//    class func rgba(red: Int, green: Int, blue: Int, alpha: CGFloat) -> UIColor{
-//        return UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
-//    }
-//}
