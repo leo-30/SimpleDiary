@@ -18,6 +18,5 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        alarmButton.isEnabled = false
     }
 }

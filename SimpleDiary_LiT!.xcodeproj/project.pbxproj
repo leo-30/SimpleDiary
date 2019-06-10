@@ -11,6 +11,7 @@
 		3E07E4B22296ACFD00BD0430 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4AF2296ACFD00BD0430 /* help1.png */; };
 		3E07E4B42296AD4E00BD0430 /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4B32296AD4E00BD0430 /* help3.png */; };
 		3E5A68312295EEC20068BA19 /* 枠.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A68302295EEC20068BA19 /* 枠.png */; };
+		3E61241E22A919AA00E4310E /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61241D22A919A900E4310E /* AlarmSettingViewController.swift */; };
 		3E68EE96229FDB0A00DD1966 /* triangle__left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E68EE94229FDB0900DD1966 /* triangle__left.png */; };
 		3E68EE97229FDB0A00DD1966 /* triangle__right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E68EE95229FDB0900DD1966 /* triangle__right.png */; };
 		3E8703FB2295CAC9009A9331 /* label1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8703FA2295CAC9009A9331 /* label1.png */; };
@@ -56,6 +57,7 @@
 		3E07E4AF2296ACFD00BD0430 /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
 		3E07E4B32296AD4E00BD0430 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
 		3E5A68302295EEC20068BA19 /* 枠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "枠.png"; sourceTree = "<group>"; };
+		3E61241D22A919A900E4310E /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
 		3E68EE94229FDB0900DD1966 /* triangle__left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle__left.png; sourceTree = "<group>"; };
 		3E68EE95229FDB0900DD1966 /* triangle__right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle__right.png; sourceTree = "<group>"; };
 		3E8703FA2295CAC9009A9331 /* label1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label1.png; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				3EB7A62A229535D600790BD1 /* DiaryViewController.swift */,
 				3EB7A62C229535E600790BD1 /* HelpViewController.swift */,
 				3EB7A6302295362800790BD1 /* IconSettingViewController.swift */,
+				3E61241D22A919A900E4310E /* AlarmSettingViewController.swift */,
 				3EB7A6322295363A00790BD1 /* IconViewController.swift */,
 				3EB7A6342295364A00790BD1 /* SettingViewController.swift */,
 				3EB7A6362295365A00790BD1 /* SaveViewContoller.swift */,
@@ -361,6 +364,7 @@
 				3EB7A62D229535E600790BD1 /* HelpViewController.swift in Sources */,
 				3EB7A6392295366700790BD1 /* Diary.swift in Sources */,
 				3EB7A6352295364A00790BD1 /* SettingViewController.swift in Sources */,
+				3E61241E22A919AA00E4310E /* AlarmSettingViewController.swift in Sources */,
 				3EB7A6372295365A00790BD1 /* SaveViewContoller.swift in Sources */,
 				3EB7A63B2295370900790BD1 /* Icon.swift in Sources */,
 				3EB7A6332295363A00790BD1 /* IconViewController.swift in Sources */,

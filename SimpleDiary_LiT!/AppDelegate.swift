@@ -8,12 +8,12 @@
 
 import UIKit
 import RealmSwift
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,7 +24,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if (oldSchemaVersion < 1) {}
         })
         Realm.Configuration.defaultConfiguration = config
+        
+        if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.badge, .sound, .alert]) { (granted, error) in
+                if error != nil {
+                    // エラー
+                    return
+                }
+                
+                if granted {
+                    // 通知許可された
+                } else {
+                    // 通知拒否
+                }
+            }
+        } else {
+            let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(settings)
+        }
+        
+        let content = UNMutableNotificationContent()
+        content.title = "お知らせ"
+        content.subtitle = ""
+        content.body = "今日の記録は済みましたか？"
+        
+        let component = DateComponents(calendar: Calendar.current, /*year: 2019, month: 6, day: 6, */hour: 12, minute: 43)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: component, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: "Identifier", content: content, trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.add(request)
+        
+        // ローカル通知予約
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
         return true
+    }
+    
+    func applicationWillTerminate(application: UIApplication) {
+        print("フリックしてアプリを終了させた時に呼ばれる")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
