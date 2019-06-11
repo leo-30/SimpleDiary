@@ -53,6 +53,22 @@ class HelpViewController: UIViewController {
         imageView.image = UIImage(named: imageArray[number])
     }
     
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
+        number += 1
+        if number >= 3 {
+            number = 0
+        }
+        imageView.image = UIImage(named: imageArray[number])
+    }
+    
+    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
+        number -= 1
+        if number < 0 {
+            number = 2
+        }
+        imageView.image = UIImage(named: imageArray[number])
+    }
+    
     @IBAction func tapToCalendar(_ sender: UIButton) {
         //画面遷移して前の画面に戻る
         self.dismiss(animated: true, completion: nil)

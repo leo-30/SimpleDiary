@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E07E4B02296ACFD00BD0430 /* help2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4AD2296ACFD00BD0430 /* help2.png */; };
-		3E07E4B22296ACFD00BD0430 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4AF2296ACFD00BD0430 /* help1.png */; };
-		3E07E4B42296AD4E00BD0430 /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07E4B32296AD4E00BD0430 /* help3.png */; };
+		3E0BD3B622AFF6DC005B062B /* help2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0BD3B322AFF6DC005B062B /* help2.png */; };
+		3E0BD3B722AFF6DC005B062B /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0BD3B422AFF6DC005B062B /* help3.png */; };
+		3E0BD3B822AFF6DC005B062B /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0BD3B522AFF6DC005B062B /* help1.png */; };
 		3E5A68312295EEC20068BA19 /* 枠.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5A68302295EEC20068BA19 /* 枠.png */; };
 		3E61241E22A919AA00E4310E /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61241D22A919A900E4310E /* AlarmSettingViewController.swift */; };
 		3E68EE96229FDB0A00DD1966 /* triangle__left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E68EE94229FDB0900DD1966 /* triangle__left.png */; };
@@ -53,9 +53,9 @@
 
 /* Begin PBXFileReference section */
 		1A7B44E9A080489A5276AE1A /* Pods-SimpleDiary_LiT!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDiary_LiT!.release.xcconfig"; path = "Target Support Files/Pods-SimpleDiary_LiT!/Pods-SimpleDiary_LiT!.release.xcconfig"; sourceTree = "<group>"; };
-		3E07E4AD2296ACFD00BD0430 /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
-		3E07E4AF2296ACFD00BD0430 /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
-		3E07E4B32296AD4E00BD0430 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
+		3E0BD3B322AFF6DC005B062B /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
+		3E0BD3B422AFF6DC005B062B /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
+		3E0BD3B522AFF6DC005B062B /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
 		3E5A68302295EEC20068BA19 /* 枠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "枠.png"; sourceTree = "<group>"; };
 		3E61241D22A919A900E4310E /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
 		3E68EE94229FDB0900DD1966 /* triangle__left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle__left.png; sourceTree = "<group>"; };
@@ -164,15 +164,15 @@
 		3EB7A5FC2295353200790BD1 /* SimpleDiary_イラスト */ = {
 			isa = PBXGroup;
 			children = (
+				3E0BD3B522AFF6DC005B062B /* help1.png */,
+				3E0BD3B322AFF6DC005B062B /* help2.png */,
+				3E0BD3B422AFF6DC005B062B /* help3.png */,
 				3E68EE94229FDB0900DD1966 /* triangle__left.png */,
 				3E68EE95229FDB0900DD1966 /* triangle__right.png */,
 				3E89B991229FD85100C9CFF9 /* triangle_left.png */,
 				3E89B990229FD85100C9CFF9 /* triangle_right.png */,
 				3E89B98C229FD3F600C9CFF9 /* icon.png */,
 				3E909C9C2297D20C006AE5FE /* 賞状をわたすうさぎ.png */,
-				3E07E4B32296AD4E00BD0430 /* help3.png */,
-				3E07E4AF2296ACFD00BD0430 /* help1.png */,
-				3E07E4AD2296ACFD00BD0430 /* help2.png */,
 				3E5A68302295EEC20068BA19 /* 枠.png */,
 				3E8703FA2295CAC9009A9331 /* label1.png */,
 				3EB7A5FD2295353200790BD1 /* music1.png */,
@@ -272,24 +272,24 @@
 				3E5A68312295EEC20068BA19 /* 枠.png in Resources */,
 				3EB7A6162295353200790BD1 /* flower1.png in Resources */,
 				3EB7A6222295353200790BD1 /* line.png in Resources */,
+				3E0BD3B622AFF6DC005B062B /* help2.png in Resources */,
+				3E0BD3B822AFF6DC005B062B /* help1.png in Resources */,
 				3EB7A61C2295353200790BD1 /* book1.png in Resources */,
 				3EB7A6172295353200790BD1 /* flower2.png in Resources */,
+				3E0BD3B722AFF6DC005B062B /* help3.png in Resources */,
 				3EB7A6182295353200790BD1 /* good1.png in Resources */,
 				3EB7A61B2295353200790BD1 /* good2.png in Resources */,
 				3E89B993229FD85200C9CFF9 /* triangle_left.png in Resources */,
 				3E8703FB2295CAC9009A9331 /* label1.png in Resources */,
 				3E68EE97229FDB0A00DD1966 /* triangle__right.png in Resources */,
 				3EB7A5F0229517B200790BD1 /* Main.storyboard in Resources */,
-				3E07E4B02296ACFD00BD0430 /* help2.png in Resources */,
 				3EB7A61D2295353200790BD1 /* exercise2.png in Resources */,
 				3EB7A6242295353200790BD1 /* back.png in Resources */,
 				3EB7A6232295353200790BD1 /* setting.png in Resources */,
 				3EB7A6192295353200790BD1 /* label.png in Resources */,
 				3E89B98D229FD3F700C9CFF9 /* icon.png in Resources */,
 				3EB7A6122295353200790BD1 /* study2.png in Resources */,
-				3E07E4B22296ACFD00BD0430 /* help1.png in Resources */,
 				3EB7A6112295353200790BD1 /* music1.png in Resources */,
-				3E07E4B42296AD4E00BD0430 /* help3.png in Resources */,
 				3EB7A6152295353200790BD1 /* study1.png in Resources */,
 				3E68EE96229FDB0A00DD1966 /* triangle__left.png in Resources */,
 				3EB7A61A2295353200790BD1 /* book2.png in Resources */,
